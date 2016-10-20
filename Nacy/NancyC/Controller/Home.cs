@@ -10,7 +10,7 @@ namespace WebApplication1.Modules.User
 {
     public class Home : NancyModule
     {
-        //存储
+        //存储branch
         public static  List<Student> lstStudent = new List<Student>();
         public Home()
         {
