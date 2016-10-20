@@ -1,0 +1,121 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style type="text/css">
+        .center {
+            margin: auto;
+        }
+
+        main {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script src="~/JavaScript/jquery-1.8.2.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#bt").click(function () {
+                var leng = $(":checkbox").length;
+                alert(leng);
+                $(":checkbox").each(function (index, element) {
+                    var name = $(this).attr("name");
+                    alert(name);
+
+                });
+            });
+
+            $("#ii").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "/json/get",
+                    dataType: "json",
+                    data: {
+                        selRollBack: 'ff',
+                    },
+                    success: function (xmlobj) {
+                        var random =  Math.random();
+                        var $tr = $("<tr>" +
+              "<td >" + "<input type ='checkbox' id='" + random + "' name='" + random + "'+  value= '" + xmlobj + "'/>" + "</td>" + "</td>" + "</tr>");
+                        $("#table").append($tr);
+                      
+                    }
+                });
+
+               
+            });
+            function bind() {
+                $(":button").on("click", function () {
+                    var dd = $(this).attr("name");
+                    var value = $(this).val();
+                    alert(dd);
+                });
+                backclolor = "gray";
+            }
+
+   
+
+        });
+    </script>
+    <link href="~/JavaScript/Type.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width;text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title></title>
+</head>
+<body>
+    <table id="table">
+        
+    </table>
+
+    <input type="button" id="bt" value="psot"/>
+
+    @{
+        List<WebApplication1.Student> lstStudent = Model as List<WebApplication1.Student>;
+        if (lstStudent.Count != 0)
+        {
+            <table class="tablecenter">
+
+                @foreach (WebApplication1.Student item in lstStudent)
+                {
+                    <tr>
+                        <td style="width: 50px">@item.ID</td>
+                        <td style="width: 50px">@item.Name</td>
+                        <td style="width: 50px"><a href="/Home/modify/@item.ID">修改</a></td>
+                        <td style="width: 50px"><a href="/@item.ID">删除</a></td>
+                    </tr>
+                }
+            </table>
+        }
+    }
+
+
+
+
+
+    <div align="center">
+        <p align="center">添加成员</p>
+        <form action="/Home/Add" method="post">
+            <p>姓名: <input type="text" name="Name" style="width: 50px" /></p>
+            <p><input type="submit" value="提交" /></p>
+        </form>
+    </div>
+    <div align="center">
+        <p align="center">查询成员</p>
+        <form action="/Home/Search" method="post">
+            <p>姓名: <input type="text" name="Search" style="width: 50px" /></p>
+            <p><input type="submit" value="查询" /></p>
+        </form>
+    </div>
+    <div>
+
+    </div>
+    <input id="ii" type="text" value="点击"/>
+
+     @Html.Partial("partth1");
+</body>
+</html>

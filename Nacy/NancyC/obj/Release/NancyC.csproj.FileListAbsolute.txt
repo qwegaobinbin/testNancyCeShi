@@ -1,0 +1,17 @@
+G:\1\Nacy\NancyC\bin\Release\Views\Home\Home.cshtml
+G:\1\Nacy\NancyC\bin\Release\Views\Home\Index.cshtml
+G:\1\Nacy\NancyC\bin\Release\NancyC.exe.config
+G:\1\Nacy\NancyC\bin\Release\NancyC.exe
+G:\1\Nacy\NancyC\bin\Release\NancyC.pdb
+G:\1\Nacy\NancyC\bin\Release\Nancy.dll
+G:\1\Nacy\NancyC\bin\Release\Nancy.Hosting.Self.dll
+G:\1\Nacy\NancyC\bin\Release\Nancy.ViewEngines.Razor.dll
+G:\1\Nacy\NancyC\bin\Release\System.Web.Razor.dll
+G:\1\Nacy\NancyC\bin\Release\Nancy.xml
+G:\1\Nacy\NancyC\bin\Release\Nancy.Hosting.Self.xml
+G:\1\Nacy\NancyC\bin\Release\Nancy.ViewEngines.Razor.xml
+G:\1\Nacy\NancyC\bin\Release\System.Web.Razor.xml
+G:\1\Nacy\NancyC\bin\Release\zh-Hans\System.Web.Razor.resources.dll
+G:\1\Nacy\NancyC\obj\Release\NancyC.exe
+G:\1\Nacy\NancyC\obj\Release\NancyC.pdb
+G:\1\Nacy\NancyC\obj\Release\NancyC.csprojResolveAssemblyReference.cache

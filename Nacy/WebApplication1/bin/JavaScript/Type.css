@@ -1,0 +1,20 @@
+﻿
+body {
+    background-color:#f8f8f8;
+}
+.tablecenter
+    {
+            margin:auto;border: 2px solid black;
+    }
+    .center 
+    {
+        margin:200px; 
+    }
+    .width
+    {
+        width:50px;
+    }
+    .centerLine 
+    {
+        text-align:center;
+    }

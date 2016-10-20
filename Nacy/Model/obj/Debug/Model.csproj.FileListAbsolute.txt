@@ -1,0 +1,5 @@
+G:\1\Nacy\Model\bin\Debug\Model.dll
+G:\1\Nacy\Model\bin\Debug\Model.pdb
+G:\1\Nacy\Model\obj\Debug\Model.dll
+G:\1\Nacy\Model\obj\Debug\Model.pdb
+G:\1\Nacy\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
